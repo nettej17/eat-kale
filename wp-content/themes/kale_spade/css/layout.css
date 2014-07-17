@@ -1,0 +1,63 @@
+/*--------------------------------------------------------------
+ Styling
+--------------------------------------------------------------*/
+.light-border{
+	border-style: solid;
+	border-color: lightgray;
+	border-width: 1px;
+	padding: 10px;
+}
+/*--------------------------------------------------------------
+ Layout
+--------------------------------------------------------------*/
+
+.site-content{
+	margin: auto;
+	width: 66%;
+}
+.content-area {
+	float: left;
+	margin: auto;
+	width: 75%;
+}
+.site-main {
+	margin: 0 5% 0 0;
+}
+.site-content .widget-area {
+	float: right;
+	overflow: hidden;
+	width: 25%;
+}
+.site-footer {
+	clear: both;
+	width: 100%;
+}
+/*--------------------------------------------------------------
+ Mobile Layout
+--------------------------------------------------------------*/
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+	div#wrapper {
+		width: 400px;
+	}
+
+	div#header {
+		background-image: url(../images/header.jpg);
+		height: 93px;
+		position: relative;
+	}
+
+	div#header h1 {
+		font-size: 140%;
+	}
+
+	#content , .content-area, .site-content .widget-area {
+		float: none;
+		width: 100%;
+	}
+
+	#navigation {
+		float:none;
+		width: auto;
+	}
+
+}
